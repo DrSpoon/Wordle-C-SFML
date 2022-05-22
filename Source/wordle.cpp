@@ -38,7 +38,7 @@ void dr::Wordle::setup(int size, float x, float y)
 
 	_txt->setFillColor(sf::Color::Black);
 	//_text->setStyle(sf::Text::Regular);
-	_txt->setPosition(360-180, 100);
+	_txt->setPosition(175, 100);
 
 }
 

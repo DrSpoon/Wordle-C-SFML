@@ -34,23 +34,16 @@ std::string	get_random_string(std::ifstream& input_file)
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(720, 960), "Wordle Copy by: Nikola", sf::Style::Titlebar | sf::Style::Close);
-	//sf::CircleShape shape(100.f);
-	//shape.setFillColor(sf::Color::Green);
 
 	std::ifstream input_file;
 	input_file.open("bin/Debug/dictionary.txt");
 
-	/*dr::Box _box;
-	_box.setup();
-	_box.set_Pos(600, 400);*/
-	/*dr::Word _word;
-	_word.setup(5, 0, 0);
-	_word.set_pos(600, 400);*/
+
 	dr::Bool b;
 	dr::Wordle _wordle;
 	_wordle.setup(6, 0, 0);
-	_wordle.set_pos(175, 300);
-	//_wordle.set_pos(400, 300);
+	_wordle.set_pos(180, 300);
+
 
 	std::string str = "";
 	str = get_random_string(input_file);
@@ -68,12 +61,9 @@ int main()
 		}
 
 		window.clear(sf::Color(255, 255, 255, 255));
-		//window.draw(_text);
-		//_box.draw(window);
-		//_word.draw(window);
+
 		_wordle.draw(window, b);
 
-		//window.draw(shape);
 		window.display();
 	}
 

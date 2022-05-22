@@ -3,8 +3,7 @@
 
 dr::Box::Box()
 {
-	/*_text = new sf::Text;*/
-	//_box = new sf::RectangleShape;
+
 
 	if (!_font.loadFromFile("bin/Debug/arial.ttf"))
 	{
